@@ -1,0 +1,280 @@
+
+header{
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.4010854341736695) 0%),  url(./img/bg-img.jpg) center/cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+.container{
+    max-width: 90%;
+    margin: auto;
+    
+}
+.flex-header{
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    
+    
+    
+}
+ul li{
+    display: none;
+}
+.logo a{
+    color: white;
+   
+    font:bold 1.5em  'Mulish'  ;
+}
+.btn-flex{
+    font-size: 1em;
+}
+.btn-flex a{
+    color: white; 
+    padding: .9em 1em;
+    font-size: .8em;
+    border-radius: 25px; 
+    background: #0fb78d;
+    transition: .5s all;
+}
+.btn-flex a:hover{
+    background: #0cd3a1;
+}
+.btn-flex i{
+    color: white;
+    padding:  1em;
+    
+}
+.middle-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.btn-play button{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    outline: 2px solid #0fb78d;
+    outline-offset: 3px;
+    background: #0fb78d;
+    cursor: pointer;
+    border: none;
+    flex-basis: 50%;
+}
+.btn-play button i{
+    font-size: 20px;
+    color: white;
+}
+.middle-flex{
+    margin-top: 8em;
+    
+
+}
+.text{
+    color: white;
+    text-align: center;
+    padding: 0 1em;
+    max-width: 450px;  
+}
+.text h1{
+    font-weight: bold;
+    
+    font: 2em  'Mulish'  ;
+}
+.text p{
+    font-weight: 500;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-indent: 10px;
+    margin: 2em 0 3em 0;
+    
+}
+.text p a{
+    color: white;
+    border-bottom: 5px solid #15c599;
+}
+.text :nth-child(3){
+    padding: .8em 1.2em;
+    background: #0cd3a1;
+    color: white;
+    border-radius: 1.5em;   
+    transition: .5s all;
+    
+    
+}
+.text :nth-child(3):hover{
+    background: #0fe6b0;
+}
+        /* Header End */
+
+
+        /* Cards Start */
+        .cards{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card{
+            background: green;
+            padding: 2em;
+            flex-basis: 90%;
+           
+        }
+        .cards :nth-child(2){
+            margin: 1em 0;
+            
+        }
+        .card2{
+            background: rgb(249, 140, 57);
+        }
+        .card3{
+            background: rgb(131, 131, 227);
+        }
+        .img i{
+            font-size: 50px;
+            color: rgb(252, 234, 234);
+        }
+        .card h1{
+            color: white;
+            font-size: 1.5em;
+            margin: .5em 0;
+        }
+        .card p{
+            color: rgb(222, 208, 208);
+            line-height: 1.4em;
+            min-width: 200px;
+        }
+        /* Cards End */
+
+
+        /* Cards 2  Start*/
+        .wrapper h1{
+            font-size: clamp(1.5em,2.5em,3.5em);
+            color: #0cd3a1;
+            text-align: center;
+            margin: 2em auto 0;
+
+        }
+        .wrapper h1 span{
+            border-bottom: 5px solid #dbb426;
+            }
+            .wrapper .p1{
+                
+                line-height: 1.5em;
+                text-align: center;
+                font-size:1.2em;
+                max-width: 600px;
+                margin: 2em auto 0;
+            }
+            .wrapper .cards2{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .wrapper .cards2 .card2-1{
+                text-align: left;
+                padding: 2em;
+                flex-basis: 50%;
+            }
+            .cards2 i{
+                font-size: 3em;
+                color: rgb(66, 232, 174);
+            }
+            .cards2 h2{
+                padding:1em 0 .5em 0 ;
+                font-size: 1.5em;
+            }
+            .cards2 p{
+                font-size: 1.1em;
+            }
+            
+
+
+/* For Computer */
+
+
+@media(min-width:992px){
+    .container{
+        
+         max-width: 90%;
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        
+    }
+    ul li{
+        display: block;
+    }
+    .btn-flex i{
+        display: none;
+    }
+    ul li a{
+        color: white;
+        padding: 0 1em;
+    }
+    .middle-flex{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .btn-play{
+        flex-basis: 50%;
+    }
+    .text{
+        flex-basis: 50%;
+    }
+    .text h1{
+        
+        
+        font: bold 3.5em 'libre Baskevrille'  ;
+    }
+    .text p{
+        text-indent: 0px;
+    }
+                             /* Header End */
+                             /* Start Cards */
+
+        .cards{
+            margin: -50px 0px 0px 0px;
+
+        }
+        .card{
+            flex-basis: 28%;
+            margin: 0px 10px 0 10px;
+
+        }
+        /* Cards End */
+        /* Card 2 Start */
+        .wrapper .cards2 .card2-1{
+            text-align: left;
+            padding: 2em;
+            flex-basis: 33%;
+        }
+  } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(400px<width<992px){
+    .cards{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .card p{
+        max-width: 400px;
+    }
+}
